@@ -1,0 +1,4 @@
+{
+  "namespace": "KrokyMapmaking",
+  "setup": "setup.mjs"
+}
