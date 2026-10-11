@@ -88,7 +88,9 @@ Both new multipliers start at **1×**, so choose your preferred values after upd
 | Cover / logo | [krokys-mapmaking-cover.png](assets/krokys-mapmaking-cover.png) |
 | Source URL | https://github.com/krokyk/melvor-mapmaking |
 | Required expansion | Atlas of Discovery |
-| Suggested categories | QoL, Cheat |
+| Type tags | QoL, Cheat, Non-Combat, UI, Offline |
+| Platform tags | Desktop, Browser, iOS, Android |
+| Game version | 1.3.1 |
 | Visibility | Private, for your existing owner-subscription setup |
 
 Upload the ZIP as a new **2.0.1** release on the existing listing and make it the active release.
