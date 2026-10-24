@@ -2,7 +2,7 @@
 
 A small Melvor Idle mod with separate integer action multipliers for Paper Making and dig-site Map Upgrading.
 Requires Atlas of Discovery and access to Cartography.
-Version: 2.0.1.
+Version: 2.0.2.
 Internal namespace: `KrokyMapmaking`.
 Melvor takes the displayed mod name from the mod.io listing.
 
@@ -40,6 +40,10 @@ Settings are saved through Melvor's native mod settings system.
 - Batches use Cartography's own activity state, including when Multitasking runs it alongside combat or other skills.
 - Surveying and initial map creation keep their existing behavior.
 
+## Changes in 2.0.2
+
+Batch summary text and visibility update only when their values change.
+
 ## Changes in 2.0.1
 
 Fix Paper Making and Map Upgrade batches stopping after one action when Multitasking runs Cartography alongside another skill.
@@ -58,12 +62,12 @@ From this repository, run:
 
 ```powershell
 node --test
-Compress-Archive -LiteralPath manifest.json, setup.mjs -DestinationPath krokys-mapmaking-2.0.1.zip -Force
+Compress-Archive -LiteralPath manifest.json, setup.mjs -DestinationPath krokys-mapmaking-2.0.2.zip -Force
 ```
 
 The ZIP contains only `manifest.json` and `setup.mjs`, both at its root.
 The tests exercise the real setup module with mocked Melvor API boundaries; they do not run the game.
-All 20 automated tests pass, including Paper Making and Map Upgrade batching when another activity owns the game's primary action.
+All 21 automated tests pass, including Paper Making and Map Upgrade batching when another activity owns the game's primary action.
 
 ## Cover artwork
 
@@ -78,7 +82,7 @@ Ready-to-paste summary, description, changelog and upload fields are in [MOD_IO.
 
 1. Sign in to mod.io using the same login method and email used for mod.io inside Melvor.
 2. Open the existing **Kroky's Mapmaking** mod's management page and keep its visibility private.
-3. Upload `krokys-mapmaking-2.0.1.zip` as a new file with version **2.0.1** and make it the active release.
+3. Upload `krokys-mapmaking-2.0.2.zip` as a new file with version **2.0.2** and make it the active release.
 4. Restart Melvor on each subscribed device and confirm the mod is enabled in the active mod profile.
 5. Set the new Paper Making and Map Upgrade multipliers.
 
@@ -90,7 +94,7 @@ Paper batching has automated coverage; mobile and offline batch execution have n
 ## Local iteration through Creator Toolkit
 
 Replace the local mod's ZIP using its upload button, reload Melvor, and load your latest character save.
-Toolkit preserves the entry's existing name when replacing a ZIP, so an entry named `krokys-mapmaking-2.0.0` can contain the 2.0.1 build.
+Toolkit preserves the entry's existing name when replacing a ZIP, so an entry named `krokys-mapmaking-2.0.0` can contain the 2.0.2 build.
 Unlinked local mods reset their native settings after a reload, so re-enter the desired multipliers for local testing.
 To retain settings, link the local entry to your existing mod.io listing and keep that listing subscribed and installed through mod.io, as described in the [Creator Toolkit documentation](https://wiki.melvoridle.com/w/Mod_Creation/Creator_Toolkit).
 The local ZIP remains the development build; linking does not require publishing every edit.

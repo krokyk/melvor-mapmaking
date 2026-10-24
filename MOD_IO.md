@@ -1,6 +1,6 @@
-# Kroky's Mapmaking 2.0.1 mod.io upload copy
+# Kroky's Mapmaking 2.0.2 mod.io upload copy
 
-Use the listing fields and release notes below to publish version 2.0.1 on the existing Kroky's Mapmaking mod.io page.
+Use the listing fields and release notes below to publish version 2.0.2 on the existing Kroky's Mapmaking mod.io page.
 
 ## Listing name
 
@@ -73,18 +73,17 @@ Both new multipliers start at **1×**, so choose your preferred values after upd
 
 ## Release version
 
-2.0.1
+2.0.2
 
 ## Release changelog
 
-- Fix Paper Making and Map Upgrade batches stopping after one action when used with Multitasking.
-- Check Cartography's own activity state so batches continue alongside other skills and still stop when Cartography is interrupted.
+- Avoid redundant text and visibility updates in Paper Making and Map Upgrade batch summaries.
 
 ## Upload fields and assets
 
 | Field | Value |
 | --- | --- |
-| Release file | [krokys-mapmaking-2.0.1.zip](krokys-mapmaking-2.0.1.zip) |
+| Release file | [krokys-mapmaking-2.0.2.zip](krokys-mapmaking-2.0.2.zip) |
 | Cover / logo | [krokys-mapmaking-cover.png](assets/krokys-mapmaking-cover.png) |
 | Source URL | https://github.com/krokyk/melvor-mapmaking |
 | Required expansion | Atlas of Discovery |
@@ -93,11 +92,11 @@ Both new multipliers start at **1×**, so choose your preferred values after upd
 | Game version | 1.3.1 |
 | Visibility | Private, for your existing owner-subscription setup |
 
-Upload the ZIP as a new **2.0.1** release on the existing listing and make it the active release.
+Upload the ZIP as a new **2.0.2** release on the existing listing and make it the active release.
 The summary is written as three sentences; paste them together into the single-line summary field.
 Copy the content under **Full description** into the listing description, and the **Release changelog** bullets into the file upload changelog.
 
-Verification status: 20 automated tests pass against mocked game APIs.
+Verification status: 21 automated tests pass against mocked game APIs.
 Map batching in version 2.0.1 was verified in the browser through Creator Toolkit with Multitasking and combat active: two 20-action batches added 40 upgrades, consumed 120 paper, and granted 576 Cartography XP.
 Paper batching has automated coverage; mobile and offline batch execution have not been verified on a live character.
 
