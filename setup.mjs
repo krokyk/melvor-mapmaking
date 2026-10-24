@@ -53,8 +53,10 @@ export function setup(ctx) {
           summaries.set(this, summary);
         }
         const multiplier = getMultiplier(name);
-        summary.textContent = `Up to ${multiplier} actions per cycle. Listed costs, output/progress and XP are per action.`;
-        summary.hidden = multiplier === 1;
+        const text = `Up to ${multiplier} actions per cycle. Listed costs, output/progress and XP are per action.`;
+        if (summary.textContent !== text) summary.textContent = text;
+        const hidden = multiplier === 1;
+        if (summary.hidden !== hidden) summary.hidden = hidden;
       });
     }
   }

@@ -355,3 +355,36 @@ test("menu summaries update without duplication, preserve native rates, and hide
     assert.notEqual(anotherMenu.children[0], summary);
   }
 });
+
+test("unchanged menu rates do not rewrite the batch summary", () => {
+  let textWrites = 0, hiddenWrites = 0;
+  globalThis.PaperMakingMenuElement = class {
+    nativeCalls = 0;
+    appendChild(child) { this.summary = child; }
+    updateRates() { this.nativeCalls++; }
+  };
+  globalThis.document = { createElement() {
+    let text = "", hidden = false;
+    return {
+      get textContent() { return text; },
+      set textContent(value) { textWrites++; text = value; },
+      get hidden() { return hidden; },
+      set hidden(value) { hiddenWrites++; hidden = value; },
+    };
+  } };
+  const m = loadMod();
+  const menu = new PaperMakingMenuElement();
+  for (let render = 0; render < 1000; render++) menu.updateRates();
+  assert.equal(menu.nativeCalls, 1000, "native rate updates still run every time");
+  assert.equal(textWrites, 1);
+  assert.equal(hiddenWrites, 1);
+  m.set(PAPER, 10);
+  menu.updateRates();
+  assert.equal(textWrites, 2); assert.equal(hiddenWrites, 2);
+  assert.match(menu.summary.textContent, /Up to 10 actions per cycle/);
+  assert.equal(menu.summary.hidden, false);
+  m.set(PAPER, 20);
+  menu.updateRates();
+  assert.equal(textWrites, 3); assert.equal(hiddenWrites, 2);
+  assert.match(menu.summary.textContent, /Up to 20 actions per cycle/);
+});
