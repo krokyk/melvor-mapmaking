@@ -1,6 +1,6 @@
 # Kroky's Mapmaking cover
 
-Output: `krokys-mapmaking-cover.png`, 1672 × 941 pixels, PNG.
+Output: `cover.png`, 1672 × 941 pixels, PNG.
 Created with the built-in image generator using the following Melvor Idle game artwork as compositing references.
 This is an AI-assisted composition rather than a pixel-for-pixel assembly of the originals.
 

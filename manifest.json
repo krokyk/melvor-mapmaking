@@ -1,4 +1,5 @@
 {
   "namespace": "KrokyMapmaking",
-  "setup": "setup.mjs"
+  "setup": "setup.mjs",
+  "icon": "icon.svg"
 }
