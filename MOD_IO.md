@@ -6,27 +6,33 @@ Kroky's Mapmaking
 
 ## Summary
 
-Batch Paper Making and dig-site Map Upgrading with separate 1–1000× action multipliers and normal material costs and rewards.
-Requires Atlas of Discovery.
+Batch Paper Making and dig-site Map Upgrading with separate 1–1000× multipliers, normal costs and rewards, and offline support. Requires Atlas of Discovery.
 
 ## Full description
 
-**Make more paper and upgrade dig-site maps in fewer timer cycles.**
+Make paper and upgrade dig-site maps in batches.
 
-- Separate **1–1000× action multipliers** for Paper Making and Map Upgrading, both defaulting to **1×**.
-- Each normal-duration cycle performs up to the chosen number of ordinary actions, with normal material costs, XP, preservation and reward rolls.
+- Choose separate **1–1000× multipliers** for Paper Making and Map Upgrading; both default to **1×**.
+- Each normal-duration cycle performs up to the chosen number of ordinary actions, with normal costs, XP, preservation and reward rolls.
 - Batches stop when materials run out, the target changes, the skill stops or a map reaches Perfect.
-- Works with online and offline progress, normal interval bonuses, Speedup++ and Multitasking.
-- Respects Auto Cartographer's queued transitions when supported by its installed version.
-- Surveying and initial map creation retain their normal behavior.
+- Works online and offline.
+  Surveying and initial map creation keep their normal behavior.
 
 **Requires:** Atlas of Discovery and access to Cartography.
 Set both multipliers under **Mod Settings → Kroky's Mapmaking → Mapmaking**.
-Native costs and rewards remain per action; other mods' rate and ETA displays may not account for batching.
 
-**Superseded mods:** None.
+Supports interval changes from [Speedup++](https://mod.io/g/melvoridle/m/speedup2), parallel activity with [Multitasking](https://mod.io/g/melvoridle/m/multitasking) and queued transitions from supported versions of [Auto Cartographer](https://mod.io/g/melvoridle/m/auto-cartographer).
+Other mods' rate and ETA displays may not account for batching.
 
 [Source code](https://github.com/krokyk/melvor-mapmaking)
+
+### See my other mods:
+
+- [Kroky's Bardic Troupe](https://mod.io/g/melvoridle/m/krokys-bardic-troupe)
+- [Kroky's Workforce](https://mod.io/g/melvoridle/m/krokys-workforce)
+- [Kroky's Armed to the Seeds](https://mod.io/g/melvoridle/m/krokys-armed-to-the-seeds)
+- [Kroky's Better UI](https://mod.io/g/melvoridle/m/krokys-better-ui)
+- [Kroky's No Pain, All Gain](https://mod.io/g/melvoridle/m/krokys-no-pain-all-gain)
 
 ## Release version
 
